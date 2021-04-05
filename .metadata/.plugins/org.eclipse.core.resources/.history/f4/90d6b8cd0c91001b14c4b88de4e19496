@@ -1,0 +1,22 @@
+//DAUD MANZO JUAN PABLO
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	setbuf(stdout,NULL);
+
+	float numeroFlotanteIngresado;
+
+	printf("Ingrese un numero decimal\n");
+	scanf("%f",&numeroFlotanteIngresado);
+
+	return EXIT_SUCCESS;
+}
+
+float mostrador(float numerete)
+{
+	printf("El numero ingresado es %f",numerete);
+
+	return numerete;
+}

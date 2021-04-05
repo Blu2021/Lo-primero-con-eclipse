@@ -1,0 +1,21 @@
+//DAUD MANZO JUAN PABLO
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	setbuf(stdout,NULL);
+
+	int numeroUno;
+	int numeroDos;
+
+	printf("ingrese dos numeros de 1 a 100\n");
+	scanf("%d %d",&numeroUno,&numeroDos);
+	while(numeroUno<1||numeroUno>100||numeroDos<1||numeroDos>100)
+	{
+		printf("ingrese dos numeros de 1 a 100\n");
+		scanf("%d %d",&numeroUno,&numeroDos);
+	}
+
+	return EXIT_SUCCESS;
+}

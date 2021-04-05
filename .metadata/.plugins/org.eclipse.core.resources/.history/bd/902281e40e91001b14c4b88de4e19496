@@ -1,0 +1,20 @@
+//DAUD MANZO JUAN PABLO
+#include <stdio.h>
+#include <stdlib.h>
+
+retornaEnteros(enteroIngresado);
+
+int main(void)
+{
+	setbuf(stdout,NULL);
+
+	int enteroIngresado;
+	int numeroRetornado;
+
+	printf("Ingrese un numero entero\n");
+	scanf("%d",&enteroIngresado);
+
+	numeroRetornado=retornaEnteros(enteroIngresado);
+
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,10 @@
+//DAUD MANZO JUAN PABLO
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+
+	printf("Ingrese un numero decimal\n");
+	return EXIT_SUCCESS;
+}
