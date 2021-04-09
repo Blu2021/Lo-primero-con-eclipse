@@ -1,5 +1,5 @@
-17:51:40 **** Incremental Build of configuration Debug for project Clase 4 Ejercicio 1 ****
+21:24:05 **** Incremental Build of configuration Debug for project Clase 5 Ejercicio 1 parte 2 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 4 Ejercicio 1.o" "..\\src\\Clase 4 Ejercicio 1.c" 
-gcc -o "Clase 4 Ejercicio 1.exe" "src\\Clase 4 Ejercicio 1.o" 
-Info: Nothing to build for Clase 4 Ejercicio 1
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5 Ejercicio 1 parte 2.o" "..\\src\\Clase 5 Ejercicio 1 parte 2.c" 
+gcc -o "Clase 5 Ejercicio 1 parte 2.exe" "src\\Clase 5 Ejercicio 1 parte 2.o" 
+Info: Nothing to build for Clase 5 Ejercicio 1 parte 2
