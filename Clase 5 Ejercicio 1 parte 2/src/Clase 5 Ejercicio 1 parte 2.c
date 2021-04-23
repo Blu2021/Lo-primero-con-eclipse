@@ -35,7 +35,7 @@ int main(void)
 
 	for(i=0;i<10;i++)
 	{
-		printf("El sueldo y edad del legajo %d\n edad %d\n sueldo%.2f \n",i,edad[i],sueldo[i]);
+		printf("El sueldo y edad del legajo %d\n edad %d\n sueldo %.2f \n",i,edad[i],sueldo[i]);
 	}
 
 	promedioSueldos=acumuladorSueldos/TOTALEMPLEADOS;

@@ -1,5 +1,5 @@
-21:24:05 **** Incremental Build of configuration Debug for project Clase 5 Ejercicio 1 parte 2 ****
+12:30:21 **** Incremental Build of configuration Debug for project Bibliotecas Usuario ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5 Ejercicio 1 parte 2.o" "..\\src\\Clase 5 Ejercicio 1 parte 2.c" 
-gcc -o "Clase 5 Ejercicio 1 parte 2.exe" "src\\Clase 5 Ejercicio 1 parte 2.o" 
-Info: Nothing to build for Clase 5 Ejercicio 1 parte 2
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Bibliotecas Usuario.o" "..\\src\\Bibliotecas Usuario.c" 
+gcc -o "Bibliotecas Usuario.exe" "src\\Bibliotecas Usuario.o" 
+Info: Nothing to build for Bibliotecas Usuario
