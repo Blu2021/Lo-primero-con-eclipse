@@ -1,7 +1,8 @@
 //DAUD MANZO JUAN PABLO
 #include <stdio.h>
 #include <stdlib.h>
-
+/*Ejercicio 2-1: Ingresar 5 números enteros calcular y mostrar el promedio de los números. Probar la
+aplicación con distintos valores.*/
 int main(void)
 {
 	setbuf(stdout,NULL);

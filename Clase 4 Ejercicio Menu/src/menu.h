@@ -9,5 +9,5 @@
  *  opcion 5 sale del menu
  * */
 int menu(int* opcionPuntero);
-
+int subMenu(int* opcionSubMenuPuntero);
 #endif /* MENU_H_ */

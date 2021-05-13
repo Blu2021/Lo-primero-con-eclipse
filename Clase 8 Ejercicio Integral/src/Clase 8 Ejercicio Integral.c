@@ -1,4 +1,15 @@
 //DAUD MANZO JUAN PABLO
+/*Desarrollar un programa que permita guardar los datos de 5 alumnos. Los datos a guardar para cada alumno: legajo,
+ * sexo, edad, nota1, nota2, promedio, apellido.
+Crear funciones para: *
+1-Inicializar
+2-cargar datos
+3-Mostrar1Estudiante
+4-mostrarEstudiantes
+5-Ordenar por legajo
+6-Ordenar por Apellido
+7-Ordenar por Promedio, si se repite ordenar por legajo
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

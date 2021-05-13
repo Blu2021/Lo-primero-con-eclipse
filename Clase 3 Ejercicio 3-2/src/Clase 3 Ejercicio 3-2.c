@@ -1,7 +1,10 @@
 //DAUD MANZO JUAN PABLO
 #include <stdio.h>
 #include <stdlib.h>
-
+/*
+Ejercicio 3-2:
+Crear una función que muestre por pantalla el número flotante que recibe como parámetro.
+*/
 void mostrarNumero(float numerete);
 
 int main(void)

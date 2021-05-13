@@ -1,7 +1,14 @@
 //DAUD MANZO JUAN PABLO
 #include <stdio.h>
 #include <stdlib.h>
-
+/*-Funciones
+- Limpie la pantalla
+- Asigne a las variables numero1 y numero2 los valores solicitados al usuario
+- Valide los mismos entre 10 y 100
+- Asigne a la variable operacion el valor solicitado al usuario
+- Valide el mismo 's'-sumar, 'r'-restar
+- Realice la operación de dichos valores a través de una función
+- Muestre el resultado por pantalla*/
 int sumar(int primerNum,int segundoNum);
 int restar(int primerNum,int segundoNum);
 

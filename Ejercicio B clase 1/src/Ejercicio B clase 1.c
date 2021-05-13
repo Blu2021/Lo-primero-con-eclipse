@@ -1,7 +1,10 @@
 //DAUD MANZO JUAN PABLO
 #include <stdio.h>
 #include <stdlib.h>
-
+/*
+b-Entrada/salida
+Pedir el sueldo al usuario. Sumarle un 10% e informarle cuál será su sueldo con aumento.
+*/
 int main(void)
 {
 	setbuf(stdout,NULL);

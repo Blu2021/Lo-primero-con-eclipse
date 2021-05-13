@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*Ejercicio 5-1:Pedir el ingreso de 5 números. Mostrarlos y calcular la sumatoria de los mismos.*/
+
 int main(void)
 {
 	setbuf(stdout,NULL);

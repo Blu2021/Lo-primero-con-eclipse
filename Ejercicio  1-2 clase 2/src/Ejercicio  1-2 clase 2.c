@@ -1,7 +1,7 @@
 //DAUD MANZO JUAN PABLO
 #include <stdio.h>
 #include <stdlib.h>
-
+/*Ejercicio 1-2:ingresar 3 números y mostrar el mayor de los tres.*/
 int main(void)
 {
 	setbuf(stdout,NULL);

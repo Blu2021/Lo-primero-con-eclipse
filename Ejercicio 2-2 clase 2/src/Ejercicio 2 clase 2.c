@@ -1,6 +1,13 @@
 //DAUD MANZO JUAN PABLO
 #include <stdio.h>
 #include <stdlib.h>
+/*Ejercicio 2-2:
+Ingresar 10 números enteros, distintos de cero. Mostrar:
+a. Cantidad de pares e impares.
+b. El menor número ingresado.
+c. De los pares el mayor número ingresado.
+d. Suma de los positivos.
+e. Producto de los negativos.*/
 int main()
 {
     setbuf(stdout, NULL);

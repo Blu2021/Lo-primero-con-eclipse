@@ -1,7 +1,10 @@
 //DAUD MANZO JUAN PABLO
 #include <stdio.h>
 #include <stdlib.h>
-
+/*
+Ejercicio 5-3:Realizar un programa que permita el ingreso de 10 números enteros distintos de cero. La carga deberá ser aleatoria
+(todos los elementos se inicializarán en cero por default. Determinar el promedio de los positivos, y del menor de los negativos
+la suma de los antecesores.Utilizar funciones y vectores.*/
 #define cantidadNumeros 10
 void inicializarArray(float arrayRecibido[],int tamanioArrayRecibido);
 void cargarDatosArray(float arrayRecibido[],int tamanioArrayRecibido);

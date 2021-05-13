@@ -1,7 +1,8 @@
 //DAUD MANZO JUAN PABLO
 #include <stdio.h>
 #include <stdlib.h>
-
+/*Ejercicio 1-3: ingresar 3 números y mostrar el número del medio, sólo si existe. En caso de que no
+exista también informarlo.*/
 int main(void)
 {
 	setbuf(stdout,NULL);

@@ -1,7 +1,8 @@
 //DAUD MANZO JUAN PABLO
 #include <stdio.h>
 #include <stdlib.h>
-
+/*Ejercicio 3-3:
+Crear una función que pida el ingreso de un entero y lo retorne.*/
 int retornaEnteros();
 
 int main(void)

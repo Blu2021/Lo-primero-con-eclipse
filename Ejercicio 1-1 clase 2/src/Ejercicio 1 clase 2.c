@@ -1,7 +1,7 @@
 //DAUD MANZO JUAN PABLO
 #include <stdio.h>
 #include <stdlib.h>
-
+/*Ejercicio 1-1: Ingresar dos números enteros, sumarlos y mostrar el resultado.*/
 int main(void)
 {
 	setbuf(stdout,NULL);
