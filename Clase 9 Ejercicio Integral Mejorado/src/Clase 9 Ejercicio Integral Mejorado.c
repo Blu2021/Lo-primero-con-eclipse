@@ -41,7 +41,7 @@ int inicializarArrayInstrumento(datosPersonales arrayRecibido[],int tamanioArray
 int buscarLibre(datosPersonales arrayRecibido[],int tamanioArrayRecibido);
 int cargaDatosEstructura(datosPersonales arrayRecibido[],int posicion);
 int muestraEstructurasCargadas(datosPersonales arrayRecibido[],int tamanioArrayRecibido,eCarrera carreraElegida[],int tamanioCarrera);
-int bajaDatosEstructura(datosPersonales arrayRecibido[],int tamanioArrayRecibido);
+int bajaDatosEstructura(datosPersonales arrayRecibido[],int tamanioArrayRecibido,eCarrera arrayRecibidoDos[],int tamanioArrayRecibidoDos);
 void menuModificar(datosPersonales arrayRecibido[],int tamanioArrayRecibido);
 void muestraEstructuraCargada(datosPersonales estructuraRecibida,char descripcion[]);
 void promedioDosNotas(datosPersonales arrayRecibido[],int posicion);
@@ -100,13 +100,13 @@ int main(void)
 				}
 			break;
 			case 2:
-				    muestraEstructurasCargadas(datosAlumnos,DATOS,carreraElegida,3);
-					printf("Pulse cualquiera tecla para volver\n");
-					fflush(stdin);
-					getchar();
+				muestraEstructurasCargadas(datosAlumnos,DATOS,carreraElegida,3);
+				printf("Pulse cualquiera tecla para volver\n");
+				fflush(stdin);
+				getchar();
 			break;
 			case 3:
-				bajaDatosEstructura(datosAlumnos,DATOS);
+				bajaDatosEstructura(datosAlumnos,DATOS,carreraElegida,3);
 			break;
 			case 4:
 				menuModificar(datosAlumnos,DATOS);
@@ -208,6 +208,7 @@ int cargaDatosEstructura(datosPersonales arrayRecibido[],int posicion)
 		printf("Ingrese apellido\n");
 		fflush(stdin);
 		fgets (arrayRecibido[posicion].apellido,19,stdin);
+		arrayRecibido[posicion].apellido[strcspn(arrayRecibido[posicion].apellido,"\n")]=0;
 		printf("Ingrese carrera Programacion 1\n"
 			   "                Laboratorio  2\n"
 			   "                Sistemas     3\n");
@@ -289,13 +290,14 @@ void muestraEstructuraCargada(datosPersonales estructuraRecibida,char descripcio
 	printf("%-10d%-8c%-9d%-11d%-11d%-10.2f%-12s%s\n",estructuraRecibida.legajo,estructuraRecibida.sexo,estructuraRecibida.edad,estructuraRecibida.notaUno,estructuraRecibida.notaDos,estructuraRecibida.promedio,estructuraRecibida.apellido,auxCadena);
 }
 
-int bajaDatosEstructura(datosPersonales arrayRecibido[],int tamanioArrayRecibido)
+int bajaDatosEstructura(datosPersonales arrayRecibido[],int tamanioArrayRecibido,eCarrera arrayRecibidoDos[],int tamanioArrayRecibidoDos)
 {
 	int exito=0;
 	int opcionBaja;
 	int legajoBaja;
 	int legajoExistente=0;
 	int i;
+	char auxCadena[19];
 
 	if(arrayRecibido!=NULL)
 	{
@@ -314,7 +316,8 @@ int bajaDatosEstructura(datosPersonales arrayRecibido[],int tamanioArrayRecibido
 		if(legajoExistente)
 		{
 			printf("Usted dara de baja el legajo %d, presione 1 para continuar o 2 para cancelar\n",legajoBaja);
-			//muestraEstructuraCargada(arrayRecibido[i]);
+			consigueDescripcion(arrayRecibidoDos,tamanioArrayRecibidoDos,arrayRecibido[i].idCarrera,auxCadena);
+			muestraEstructuraCargada(arrayRecibido[i],auxCadena);
 			scanf("%d",&opcionBaja);
 			while(opcionBaja!=1&&opcionBaja!=2)
 			{
