@@ -55,7 +55,7 @@ Nota 2: El código deberá tener comentarios con la documentación de cada una d
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "funcionesBlu.h"
+#include "blu2021.h"
 
 #define ORQUESTAS 3
 #define MUSICOS 3
@@ -152,7 +152,7 @@ int main(void)
 				  "7: IMPRIMIR MUSICOS\n"
 				  "8: AGREGAR INSTRUMENTO\n"
 				  "9: SALIR\n");
-		if(utn_levantaEnteros(&resultadoOpcionMenu,"Ingrese opcion Menu","ERROR,opcion invalida",1,9,3))
+		if(utn_levantaEnteros(&resultadoOpcionMenu,"Ingrese opcion Menu","ERROR,opcion invalida",1,9))
 		{
 			switch(resultadoOpcionMenu)
 			{
@@ -429,7 +429,7 @@ int cargaDatosMusico(eMusico arrayRecibido[],int posicion,eOrquesta arrayRecibid
 	{
 		utn_levantaCadenaCaracteres(auxNombre,"Ingrese nombre musico","Error,Reingrese nombre sin numeros",15);
 		utn_levantaCadenaCaracteres(auxApellido,"Ingrese apellido musico","Error,Reingrese apellido sin numeros",15);
-		utn_levantaEnteros(&auxEdad,"Ingrese edad","Error,reingrese edad",18,90,3);
+		utn_levantaEnteros(&auxEdad,"Ingrese edad","Error,reingrese edad",18,90);
 		printf("Ingrese tipo orquesta  Sinfonica    1\n"
 			   "   para el musico      Filarmonica  2\n"
 			   "                       Camara       3\n");

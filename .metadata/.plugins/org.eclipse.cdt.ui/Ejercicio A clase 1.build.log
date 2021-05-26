@@ -1,1 +1,7 @@
-Info: Nothing to build for Ejercicio A clase 1
+14:46:59 **** Rebuild of configuration Debug for project Ejercicio A clase 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Hola mundo.o" "..\\src\\Hola mundo.c" 
+gcc -o "Ejercicio A clase 1.exe" "src\\Hola mundo.o" 
+
+14:46:59 Build Finished. 0 errors, 0 warnings. (took 349ms)
+

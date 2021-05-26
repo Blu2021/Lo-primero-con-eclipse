@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Modelo De Parcial Orquestas</name>
+	<name>Biblioteca_Blu2021</name>
 	<comment></comment>
 	<projects>
-		<project>Biblioteca_Blu2021</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -134,6 +134,7 @@ void cargarDatosPantalla(ePantallas arrayRecibido[],int posicion)
 		float precio;
 		int estaVacio;
 	}ePantallas;
+
 	printf("Ingrese tipo de pantalla\n"
 		   "                   LCD:1\n"
 		   "                   LED:2\n");
@@ -149,7 +150,4 @@ void cargarDatosPantalla(ePantallas arrayRecibido[],int posicion)
 	}
 	printf("Ingrese Nombre\n");
 	fflush(stdin);
-	fgets();
-
-
 }

@@ -1,16 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <string.h>
-#include "funcionesBlu.h"
+#include <ctype.h>
+#include "blu2021.h"
 
-int utn_levantaEnteros(int* resultado,char* mensaje,char* mensajeError,int min,int max,int reintentos)
+/*LEVANTA ENTEROS , LEVANTA DECIMALES , LEVANTA CADENA DE CARACTERES*/
+
+int utn_levantaEnteros(int* resultado,char* mensaje,char* mensajeError,int min,int max)
 {
 	int aux;
 	int exito=0;
 	int tipoValidado;
 
-	if(resultado!=NULL&&mensaje!=NULL&&mensajeError!=NULL&&min<=max&&reintentos>-1)
+	if(resultado!=NULL&&mensaje!=NULL&&mensajeError!=NULL&&min<=max)
 	{
 		do{
 			printf("%s\n",mensaje);
@@ -19,7 +21,7 @@ int utn_levantaEnteros(int* resultado,char* mensaje,char* mensajeError,int min,i
 			if(aux<min||aux>max||tipoValidado==0)
 			{
 				printf("%s\n",mensajeError);
-				reintentos--;
+				exito=0;
 			}
 			else
 			{
@@ -27,7 +29,34 @@ int utn_levantaEnteros(int* resultado,char* mensaje,char* mensajeError,int min,i
 				exito=1;
 				break;
 			}
-		}while(reintentos>-1);
+		}while(exito==0);
+	}
+	return exito;
+}
+int utn_levantaDecimales(float* resultado,char* mensaje,char* mensajeError,float min,float max)
+{
+	float aux;
+	int exito=0;
+	int tipoValidado;
+
+	if(resultado!=NULL&&mensaje!=NULL&&mensajeError!=NULL&&min<=max)
+	{
+		do{
+			printf("%s\n",mensaje);
+			fflush(stdin);
+			tipoValidado=scanf("%f",&aux);
+			if(aux<min||aux>max||tipoValidado==0)
+			{
+				printf("%s\n",mensajeError);
+				exito=0;
+			}
+			else
+			{
+				*resultado=aux;
+				exito=1;
+				break;
+			}
+		}while(exito==0);
 	}
 	return exito;
 }
@@ -69,28 +98,7 @@ int utn_levantaCadenaCaracteres(char cadena[],char* mensaje,char* mensajeError,i
 	return exito;
 }
 
-void ordenarArray(int arrayRecibido[],int tamanioArrayRecibido)
-{
-	int i;
-	int j;
-	int estructuraAuxiliar;
-
-	for(i=0;i<tamanioArrayRecibido-1;i++)
-	{
-		for(j=i+1;j<tamanioArrayRecibido;j++)
-		{
-			if(arrayRecibido[i]==0&&arrayRecibido[j]==0)
-			{
-				if(arrayRecibido[i]>arrayRecibido[j])
-				{
-					estructuraAuxiliar=arrayRecibido[i];
-					arrayRecibido[i]=arrayRecibido[j];
-					arrayRecibido[j]=estructuraAuxiliar;
-				}
-			}
-		}
-	}
-}
+/* INICIALIZADORES */
 
 int inicializarCadenaCaracteres(char cadenaRecibida[],int largoCadena)
 {
@@ -106,3 +114,4 @@ int inicializarCadenaCaracteres(char cadenaRecibida[],int largoCadena)
 	}
 	return exito;
 }
+

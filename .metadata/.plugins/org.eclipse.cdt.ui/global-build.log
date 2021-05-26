@@ -1,18 +1,3 @@
-03:31:07 **** Incremental Build of configuration Debug for project blu2021 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o funcionesBlu.o "..\\funcionesBlu.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o cargaDatosEstructuras.o "..\\cargaDatosEstructuras.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o inicializarEstructuras.o "..\\inicializarEstructuras.c" 
-ar -r libblu2021.a cargaDatosEstructuras.o funcionesBlu.o inicializarEstructuras.o 
-03:31:08 **** Incremental Build of configuration Debug for project blu2021 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o inicializarEstructuras.o "..\\inicializarEstructuras.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o funcionesBlu.o "..\\funcionesBlu.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o cargaDatosEstructuras.o "..\\cargaDatosEstructuras.c" 
-ar -r libblu2021.a cargaDatosEstructuras.o funcionesBlu.o inicializarEstructuras.o 
-03:31:08 **** Incremental Build of configuration Debug for project Clase 9 Ejercicio Integral Mejorado ****
-Info: Internal Builder is used for build
-gcc "-IC:\\Users\\Multiple 92\\eclipse-workspace\\blu2021" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 9 Ejercicio Integral Mejorado.o" "..\\src\\Clase 9 Ejercicio Integral Mejorado.c" 
-gcc "-LC:\\Users\\Multiple 92\\eclipse-workspace\\blu2021\\Debug" -o "Clase 9 Ejercicio Integral Mejorado.exe" "src\\Clase 9 Ejercicio Integral Mejorado.o" -lblu2021 
-Info: Nothing to build for blu2021
-Info: Nothing to build for Clase 9 Ejercicio Integral Mejorado
+Info: Nothing to build for pruebacuil
+Info: Nothing to build for pruebacuil
+Info: Nothing to build for Clase 15 Aritmetica_Punteros
