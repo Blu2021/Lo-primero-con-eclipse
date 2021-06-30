@@ -1,3 +1,4 @@
-Info: Nothing to build for pruebacuil
-Info: Nothing to build for pruebacuil
-Info: Nothing to build for Clase 15 Aritmetica_Punteros
+01:27:23 **** Incremental Build of configuration Debug for project Anotaciones_Varias_Fin_Cuatrimestre ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Anotaciones_Varias_Fin_Cuatrimestre.o" "..\\src\\Anotaciones_Varias_Fin_Cuatrimestre.c" 
+gcc -o Anotaciones_Varias_Fin_Cuatrimestre.exe "src\\Anotaciones_Varias_Fin_Cuatrimestre.o" 
